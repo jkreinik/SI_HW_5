@@ -94,10 +94,11 @@ for x in get_twitter_data(search_term)[0:3]:
 	text.append(x['text'])
 	created.append(x['created_at'])
 
-
+print ('\n')
 tup = (text, created)
 x = 0
-while x < 3: 
+while x < 3:
+	print ('Tweet #' + str(x+1) + ':') 
 	print ('TEXT:' + tup[0][x])
 	print ('CREATED AT:' + tup[1][x])
 	print ('\n')
